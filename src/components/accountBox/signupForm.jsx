@@ -21,6 +21,11 @@ export function SignupForm(props) {
         <Input type="email" placeholder="Email" />
         <Input type="password" placeholder="Password" />
         <Input type="password" placeholder="Confirm password" />
+        <select name="acc-type" id="acc-type">
+          <option value="Srb Staff">SRB Staff</option>
+          <option value="Management">Management</option>
+          <option value="IT">IT</option>
+        </select>
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit">Signup</SubmitButton>

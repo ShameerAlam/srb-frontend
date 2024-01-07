@@ -4,6 +4,16 @@ import { LoginForm } from './loginForm';
 import { SignupForm } from './signupForm';
 import { motion } from 'framer-motion';
 import { AccountContext } from './accountContext'
+import { createGlobalStyle } from 'styled-components' 
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: rgb(241,240,220);
+    background: linear-gradient(90deg, rgba(241,240,220,1) 4%, rgba(219,219,209,1) 23%, rgba(233,216,73,1) 61%, rgba(234,241,105,1) 100%);
+    margin: 0;
+    font-family: 'Arial', sans-serif; // Adjust the font-family if needed
+  }
+`;
 
 const BoxContainer = styled.div`
   width: 280px;
@@ -120,6 +130,8 @@ export default function AccountBox(props) {
   const contextValue = {switchToSignup, switchToSignin};
   
   return (
+  <>
+  <GlobalStyle/>
   <AccountContext.Provider value={contextValue}>
   <BoxContainer>
     <TopContainer>
@@ -146,5 +158,6 @@ export default function AccountBox(props) {
     </InnerContainer>
   </BoxContainer>
   </AccountContext.Provider>  
+  </>
   );
 }
