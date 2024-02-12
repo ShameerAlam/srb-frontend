@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import styled from 'styled-components';
-import { LoginForm } from './loginForm';
-import { SignupForm } from './signupForm';
+import { LoginForm } from '../../pages/login/loginForm';
+import { SignupForm } from '../../pages/signup/signupForm';
 import { motion } from 'framer-motion';
 import { AccountContext } from './accountContext'
 import { createGlobalStyle } from 'styled-components' 

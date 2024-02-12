@@ -7,9 +7,9 @@ import {
   LineText,
   MutedLink,
   SubmitButton,
-} from "../../../resuseable_components/accountBox/common";
-import { Marginer } from "../../../resuseable_components/marginer";
-import { AccountContext } from '../../../resuseable_components/accountBox/accountContext';
+} from "../../resuseable_components/accountBox/common";
+import { Marginer } from "../../resuseable_components/marginer";
+import { AccountContext } from '../../resuseable_components/accountBox/accountContext';
 
 export function SignupForm(props) {
 

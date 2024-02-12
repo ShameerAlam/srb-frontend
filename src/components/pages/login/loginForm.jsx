@@ -7,9 +7,9 @@ import {
   LineText,
   MutedLink,
   SubmitButton,
-} from "./common";
+} from "../../resuseable_components/accountBox/common";
 import { Marginer } from "../../resuseable_components/marginer";
-import { AccountContext } from './accountContext';
+import { AccountContext } from '../../resuseable_components/accountBox/accountContext';
 
 export function LoginForm(props) {
 
