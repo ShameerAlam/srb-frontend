@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import styled from "styled-components";
-import AccountBox from "./components/accountBox/index"
+import AccountBox from "./components/resuseable_components/accountBox/index.jsx"
 
 const AppContainer = styled.div`
   width: 100%;
