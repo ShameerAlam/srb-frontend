@@ -1,5 +1,6 @@
 .card-container {
-    width: 300px;
+    width: 200px;
+    height: 400px;
     background-color: #ffffff; /* White background */
     border: 1px solid #e0e0e0; /* Light gray border */
     border-radius: 8px; /* Rounded corners */
@@ -11,12 +12,17 @@
   
   .card-header {
     color: #000000; /* Black text color */
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 26px;
+    margin-top: 20px;
+    /* margin-bottom: 12px; */
+    height:200px;
+    width:200px;
   }
   
   .card-content {
     color: #000000; /* Black text color */
     font-size: 16px;
+    height:100px;
+    width:100px;
   }
   

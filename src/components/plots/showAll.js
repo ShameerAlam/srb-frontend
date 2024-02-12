@@ -36,6 +36,7 @@ const Analytics = () => {
       {/* Other components */}
       <Card title={"100"} content={"Anomaly"} />
       <TimeSeriesPlot data={dummyData} />
+      <Card title={"100"} content={"Anomaly"} />
 
       <PiePlot data={dummyData} chartBy="ntn" />
       <BarPlot data={dummyData} chartBy="ntn" />
