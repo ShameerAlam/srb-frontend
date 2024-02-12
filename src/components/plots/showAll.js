@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TimeSeriesPlot from './time_series_plot';
 import PiePlot from './pie_plots';
 import BarPlot from './barplot';
+import Card from "../resuseable_components/card.js";
 import dummyData from '../../data/dummyData.json';  // Adjust the path based on your project structure
 // import PiePlot from './pie_plots';
 
@@ -33,6 +34,7 @@ const Analytics = () => {
   return (
     <div>
       {/* Other components */}
+      <Card title={"100"} content={"Anomaly"} />
       <TimeSeriesPlot data={dummyData} />
 
       <PiePlot data={dummyData} chartBy="ntn" />
