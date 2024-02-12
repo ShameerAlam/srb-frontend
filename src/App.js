@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import {  BrowserRouter as Router,Routes, Route, useNavigate } from "react-router-dom";
+import Analytics from "./components/plots/showAll.js"
 import styled from "styled-components";
 import AccountBox from "./components/resuseable_components/accountBox/index.jsx"
 
@@ -14,6 +16,15 @@ const AppContainer = styled.div`
 
 export default function App() {
   return <AppContainer>
-    <AccountBox />
+ <Router>
+ <Routes>
+          <Route exact path="/" element={<AccountBox />} />
+          
+          <Route exact path="/Analytics" element={<Analytics />} />
+          
+        </Routes>
+        </Router>
+    
+
   </AppContainer>
 }
