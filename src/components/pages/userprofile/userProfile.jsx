@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./userProfile.css";
 
+
 const UserProfile = () => {
   // State variables for user data
   const [fullName, setFullName] = useState('John Doe');
