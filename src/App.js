@@ -4,6 +4,7 @@ import {  BrowserRouter as Router,Routes, Route, useNavigate } from "react-route
 import Analytics from "./components/plots/showAll.js"
 import styled from "styled-components";
 import AccountBox from "./components/resuseable_components/accountBox/index.jsx"
+import UserProfile from "./components/pages/userprofile/userProfile.jsx";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -18,8 +19,8 @@ export default function App() {
   return <AppContainer>
  <Router>
  <Routes>
-          <Route exact path="/" element={<AccountBox />} />
-          
+          {/* <Route exact path="/" element={<AccountBox />} /> */}
+          <Route exact path="/" element={< UserProfile/>} />
           <Route exact path="/Analytics" element={<Analytics />} />
           
         </Routes>
