@@ -11,6 +11,7 @@ const UserProfile = () => {
   const [phoneNumber, setPhoneNumber] = useState('123-456-7890');
   const [photo, setPhoto] = useState(null);
   const [photoName, setPhotoName] = useState('user-icon.jpg');
+  const [accessLevel, setAccessLevel] = useState('User');
 
   // Function to handle profile update
   const handleUpdateProfile = () => {
@@ -29,9 +30,16 @@ const UserProfile = () => {
 
   return (
     <div className="container">
-      <form className="form-container">
-        <h1 className="heading-profile">User Profile</h1>
-        <img src={photo ? URL.createObjectURL(photo) : 'https://via.placeholder.com/150'} alt="User Photo" style={{ width: '150px', height: '150px' }} />
+    <form className="form-container">
+      <h1 className="heading-profile">User Profile</h1>
+    <div className="profile-image-container">
+        <img
+        src={photo ? URL.createObjectURL(photo) : 'https://via.placeholder.com/150'}
+        alt="User Photo"
+        className="profile-image"
+        style={{ width: '150px', height: '150px' }}
+    />
+    </div>
         <div>Current Photo: {photoName}</div>
         <input type="file" accept="image/*" onChange={handlePhotoChange} />
         <input
@@ -76,6 +84,15 @@ const UserProfile = () => {
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
+         <div>
+            <label>Access Level:</label>
+            <input
+                type="text"
+                value={accessLevel}
+                onChange={(e) => setAccessLevel(e.target.value)}
+                readOnly // Adding the readOnly attribute
+        />
+        </div>
         <button className="update-button" onClick={handleUpdateProfile}>Update Profile</button>
       </form>
     </div>
